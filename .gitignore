@@ -1,5 +1,5 @@
 client/src/jquery/*
-client/build/*
+#client/build/*
 client/node_modules/*
 correspondance/*
 client/src/materializeSASS/*
