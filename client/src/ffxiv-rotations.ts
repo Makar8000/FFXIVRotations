@@ -354,8 +354,10 @@ function setVisits(count: number)
 }
 
 // Sets if the sequence has been modified. If modified, enable sharing.
+// Disabled by Makar due to lack of backend to save rotations.
 function setModified(modified: Boolean)
 {
+  return;
 	if(modified===true)
 	{
 		$('#share').removeClass('disabled');
