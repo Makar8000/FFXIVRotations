@@ -357,7 +357,7 @@ function setVisits(count: number)
 // Disabled by Makar due to lack of backend to save rotations.
 function setModified(modified: Boolean)
 {
-  return;
+  /*
 	if(modified===true)
 	{
 		$('#share').removeClass('disabled');
@@ -366,6 +366,7 @@ function setModified(modified: Boolean)
 	{
 		$('#share').addClass('disabled');
 	}
+  */
 }
 
 // Call this function whenever the content of the skill bar changes
