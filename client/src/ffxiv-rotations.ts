@@ -487,7 +487,7 @@ $(function()
 
 	$('#share').click(function()
 	{
-		$.get("share.py",
+		$.get("https://ffxivrotations.com/share.py",
 			{ class: selectedClass, sequence: getSkillSequenceString() }
 			).done(function(data)
 			{
@@ -574,7 +574,7 @@ $(function()
 	var id = fromURLBase(idUrl)
 
 	var getDatabase = $.getJSON( "db.json");
-	var getSequenceData = $.get("load.py", { id: id });
+	var getSequenceData = $.get("https://ffxivrotations.com/load.py", { id: id });
 
 	$.when(getDatabase, getSequenceData).done(function ( response1, response2 )
 	{

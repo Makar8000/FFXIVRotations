@@ -76,7 +76,8 @@ module.exports = function (grunt) {
       },
       target: {
         files: {
-          'build/ffxiv-rotations.css': ['src/ffxiv-rotations.css']
+          'build/ffxiv-rotations.css': ['src/ffxiv-rotations.css'],
+          'build/materialize/css/materialize.min.css': ['src/materialize/css/materialize.min.css']
         }
       }
     },
@@ -91,8 +92,20 @@ module.exports = function (grunt) {
           'build/index.html': 'src/index.html',
         }
       }
-    }
+    },
 
+    copy: {
+      dist: {
+        files: [
+          {
+            expand: true,
+            cwd: 'src',
+            src: ['**/icons/*', '**/classIcons/*', '**/materialize/font/**'],
+            dest: 'build'
+          }
+        ]
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -103,6 +116,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-json-minification');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', ['typescript', 'uglify', 'sass', 'json_minification', 'cssmin', 'htmlmin']);
+  grunt.registerTask('default', ['typescript', 'uglify', 'sass', 'json_minification', 'cssmin', 'htmlmin', 'copy']);
 };
