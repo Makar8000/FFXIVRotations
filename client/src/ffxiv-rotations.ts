@@ -88,11 +88,11 @@ class Skill
 	{
 		if(this.multiIcon)
 		{
-			return 'icon/' + this.icon+(selectedClassId-8)+'.png';
+			return 'icons/' + this.icon+(selectedClassId-8)+'.png';
 		}
 		else
 		{
-			return 'icon/' + this.icon+'.png';
+			return 'icons/' + this.icon+'.png';
 		}
 	}
 
