@@ -20,6 +20,12 @@ interface JQuery
 	leanModal(): void;
 }
 
+$.ajaxSetup({
+  headers: {
+     'Access-Control-Allow-Origin': '*'
+  }
+});
+
 interface MaterializeInterface
 {
 	toast(message:string, time:number) : void;
