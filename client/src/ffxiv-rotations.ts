@@ -22,7 +22,10 @@ interface JQuery
 
 $.ajaxSetup({
   headers: {
-     'Access-Control-Allow-Origin': '*'
+     'Access-Control-Allow-Origin': '*',
+     'Sec-Fetch-Site': 'same-origin',
+     'Origin': 'https://ffxivrotations.com/',
+     'Referer': 'https://ffxivrotations.com/',
   }
 });
 
