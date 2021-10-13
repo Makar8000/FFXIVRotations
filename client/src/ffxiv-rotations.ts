@@ -30,7 +30,7 @@ declare var Materialize: MaterializeInterface;
 declare var Cookies: Cookie;
 
 // This controls the initial class (if none are specified in the url)
-var selectedClass: string = 'Monk';
+var selectedClass: string = 'Ninja';
 var selectedClassId: number;
 
 var base = "0123456789abcdefghijklmnopqrstuvwxyz";
