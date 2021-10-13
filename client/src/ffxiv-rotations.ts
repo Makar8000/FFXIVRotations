@@ -574,7 +574,7 @@ $(function()
 	var id = fromURLBase(idUrl)
 
 	var getDatabase = $.getJSON( "db.json");
-	var getSequenceData = $.get("https://ffxivrotations.com/load.py", { id: id });
+	var getSequenceData = { error: "empty" }; 
 
 	$.when(getDatabase, getSequenceData).done(function ( response1, response2 )
 	{
