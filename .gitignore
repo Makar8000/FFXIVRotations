@@ -1,3 +1,7 @@
+client/
+tools/
+*.md
+
 client/src/jquery/*
 client/build/*
 client/node_modules/*
