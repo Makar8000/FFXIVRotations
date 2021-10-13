@@ -63,7 +63,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '../client/src',
-          src: ['db.json'],
+          src: ['db.json', 'dummy.json'],
           dest: 'build'
         }]
       }

@@ -574,7 +574,7 @@ $(function()
 	var id = fromURLBase(idUrl)
 
 	var getDatabase = $.getJSON( "db.json");
-	var getSequenceData = { error: "empty" }; 
+	var getSequenceData = $.getJSON( "dummy.json");
 
 	$.when(getDatabase, getSequenceData).done(function ( response1, response2 )
 	{
